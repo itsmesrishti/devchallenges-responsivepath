@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://devchallenges-responsivepath-project1.netlify.app/">
+    <a href="https://devchallenges-responsivepath-project1.netlify.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="[https://{your-url-to-the-solution}](https://github.com/itsmesrishti/devchallengesresponsivepath/tree/main/404-not-found-master)">
+    <a href="https://{your-url-to-the-solution}](https://github.com/itsmesrishti/devchallengesresponsivepath/tree/main/404-not-found-master">
       Solution
     </a>
     <span> | </span>
