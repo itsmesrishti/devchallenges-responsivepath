@@ -12,11 +12,11 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}](https://github.com/itsmesrishti/devchallengesresponsivepath/tree/main/404-not-found-master">
+    <a href="https://github.com/itsmesrishti/devchallengesresponsivepath/tree/main/404-not-found-master" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">
+    <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY" target="_blank">
       Challenge
     </a>
   </h3>
