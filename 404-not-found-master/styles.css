@@ -1,0 +1,218 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100vh;
+}
+
+
+/* TYPOGRAPHY */
+.error-type {
+    font-family: Inconsolata, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -0.08em;
+}
+
+.error-message {
+    font-family: Space Mono, sans-serif;
+}
+
+.error-message h1 {
+    font-size: 4rem;
+    color: #333333;
+}
+
+.error-message p {
+    font-size: 1.5rem;
+    letter-spacing: -0.035em;
+    max-width: 381px;
+    color: #4F4F4F;;
+    margin: 1em 0 1.65em;
+}
+
+.error-message a {
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.035em;
+    color: white;
+}
+
+address, address a {
+    font-family: Montserrat, sans-serif;
+    color: #BDBDBD;
+    font-style: normal;
+}
+
+address a {
+    font-weight: 700;
+}
+
+/* BODY */
+.error-type {
+    height: 10vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+
+/* IMAGE */
+img {
+    width: 40%;
+}
+
+/* MAIN */
+main {
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-centering {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.error-message {
+    width: 50%;
+}
+
+.btn {
+    width: 13.5rem;
+    height: 4.25rem;
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 10vh;
+    padding-top: 6vh;
+}
+
+address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1047px) {
+    html {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 913px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    html {
+        font-size: 10px;
+    }
+    img {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .error-content {
+        flex-flow: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    img, .error-message {
+        width: 60%;
+    }
+}
+
+/* MOBILE VERSION */
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+    img {
+        width: 80%;
+    }
+    .error-message {
+        width: 90%;
+    }
+    .error-type {
+        padding-top: 3vh;
+    }
+    .error-message h1 {
+        font-size: 3rem;
+    }
+    footer {
+        padding-top: 6.5vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .error-message h1 {
+        font-size: 2.5rem;
+    }
+    .error-message p {
+        font-size: 1rem;
+    }
+    .error-message a {
+        font-size: .8rem;
+    }
+    .btn {
+        width: 10rem;
+        height: 3.5rem;
+    }
+    address {
+        font-size: .7rem;
+    }
+}
+
+
+/* TABLETS */ 
+@media only screen and (max-width: 912px) and (min-width:768px) and (orientation: portrait) {
+    .error-content {
+        flex-flow: column;
+        height: 80%;
+        justify-content: space-around;
+    }
+    footer {
+        padding-top: 7vh;
+    }
+    .error-type {
+        font-size: 2rem;
+    }
+}
