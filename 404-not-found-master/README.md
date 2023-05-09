@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="[https://{your-url-to-the-solution}](https://github.com/itsmesrishti/devchallengesresponsivepath/tree/main/404-not-found-master)">
       Solution
     </a>
     <span> | </span>
