@@ -50,7 +50,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
   I even made the image responsive and I learned that sometimes the solution is simple silly.
   
 - **Your wisdom? :)**<br>
-  Sometimes, the solution is simple you don't have to think or try so hard.
+  Sometimes, the solution is simple, you don't have to think or try too hard.
 
 ### Built With
 
