@@ -74,6 +74,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [itsmesrishti.github.io](https://itsmesrishti.github.io/)
-- GitHub [itsmesrishti](https://github.com/itsmesrishti)
-- LinkedIn [Srishti Chaudhary](https://www.linkedin.com/in/srishtichaudhary/)
+- Website: [itsmesrishti.github.io](https://itsmesrishti.github.io/)
+- GitHub: [itsmesrishti](https://github.com/itsmesrishti)
+- LinkedIn: [Srishti Chaudhary](https://www.linkedin.com/in/srishtichaudhary/)
