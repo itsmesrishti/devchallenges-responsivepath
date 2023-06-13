@@ -70,12 +70,10 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Netlify](https://www.netlify.com/) for hosting
 
 ## Contact
 
 - Website [itsmesrishti.github.io](https://itsmesrishti.github.io/)
 - GitHub [itsmesrishti](https://github.com/itsmesrishti)
-- LinkedIn [srishti chaudhary](https://www.linkedin.com/in/srishtichaudhary/)
+- LinkedIn [Srishti Chaudhary](https://www.linkedin.com/in/srishtichaudhary/)
