@@ -40,10 +40,17 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- **Where can I see your demo?**<br>
+  You can see my demo here: https://devchallenges-responsivepath-project3.netlify.app/
+  
+- **What was your experience?**<br>
+  I enjoyed creating the landing page and figuring out how to use basic JS to create a functional mobile nav.
+  
+- **What have you learned/improved?**<br>
+  I made sure the page is responsive on all devices and also in landscape mode on phones.
+  
+- **Your wisdom? :)**<br>
+  JS makes your life easy :)
 
 ### Built With
 
