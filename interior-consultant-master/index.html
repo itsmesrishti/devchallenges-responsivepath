@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,i nitial-scale=1.0">
+        <title>Interior Consultant Page</title>
+        <link rel="icon" href="/devchallenges.png">
+        <link rel="stylesheet" href="styles.css">  
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="logo"><p>This Interior</p></div>
+            <nav class="desktop-menu">
+                <ul>
+                    <li class="current">Home</li>
+                    <li>Collection</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <nav class="mobile-menu">
+                <span class="material-icons" id="open-menu">menu</span>
+                <div id="close-icon-container"><span class="material-icons" id="close-menu">close</span></div>
+                <ul id="mobile-menu-list">
+                    <li class="current">Home</li>
+                    <li>Collection</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="text">
+                <h1>Modern interior</h1>
+                <p>
+                    A full-service residential & commercial interior
+                    design and staging company offering professional organizing
+                    & eco-services.
+                </p>
+                <a href="#">Read more<span class="material-icons">arrow_right_alt</span></a>
+            </div>
+            <div class="image">
+                <img src="/photo1.png" alt="photo of Aliza Webber's work" class="example">
+                <div class="designer-card">
+                    <div class="designer-info">
+                        <img src="/photo2.png" alt="Aliza Webber">
+                        <div class="name-n-job">
+                            <p class="full-name">Aliza Webber</p>
+                            <p class="job">Interior designer</p>
+                        </div>
+                    </div>
+                    <p class="work-desc">Designed in 2020 by <br> Aliza Webber</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>created by <a href="https://devchallenges.io/portfolio/itsmesrishti">itsmesrishti</a> - devChallenges.io</p>
+        </footer>
+        
+        <!-- JS for mobile menu control -->
+        <script src="mobile-menu-ctrl.js"></script>
+    </body>
+</html>
