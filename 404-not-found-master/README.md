@@ -38,8 +38,6 @@
 
 ![screenshot](404-page.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
 - **Where can I see your demo?**<br>
   You can see me demo here: https://devchallenges-responsivepath-project1.netlify.app/
   
