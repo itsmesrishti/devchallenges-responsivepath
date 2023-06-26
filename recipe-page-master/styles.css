@@ -1,0 +1,561 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+    padding: 7vh 16vw 3vh;
+}
+
+/* TYPOGRAPHY */
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, p, li, input {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.sub-heading .text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    color: #4F4F4F;
+    /* max-width: 60%; */
+}
+
+h2, h3, .ingredients li {
+    color: #333333;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin: 2rem 0 1.8rem;
+}
+
+li, .credits {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.ingredients li {
+    line-height: 1.563rem;
+}
+
+.make-bold {
+    color: #333333;
+    font-weight: 700;
+}
+
+.make-italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.num {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.credits {
+    font-style: italic;
+    color: #BDBDBD;
+}
+
+.credits a {
+    color: #BDBDBD;
+    text-decoration: none;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.063rem;
+    color: #828282;
+    text-align: center;
+    margin-top: 5.8rem;
+}
+
+footer a, 
+footer a:visited {
+    font-weight: 700;
+    color: #828282;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    font-size: .625rem;
+    line-height: .75rem;
+}
+
+.info-card li p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    color: #333333;
+}
+
+/* HEADER */
+.sub-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-top: .8rem;
+    max-width: 610px;
+}
+
+.sub-heading img {
+    margin-top: 5px;
+}
+
+.banner-img {
+    max-width: 100%;
+    width: 969px;
+    margin-top: 2.6rem;
+    margin-bottom: 2.8rem;
+}
+
+/* GRID LAYOUT */
+.content {
+    display: grid;
+    grid-template-columns: 60% 39%;
+}
+
+/* INGREDIENTS SECTION */
+.ingredients li {
+    margin-bottom: .4rem;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    column-gap: .5rem;
+}
+
+.ingredients li input {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #828282;
+    border-radius: 4px; 
+    margin-bottom: 1rem;
+}
+
+h3:nth-of-type(2) {
+    margin-top: 1.5rem;
+}
+
+.ingredients li:has(input:checked) {
+    text-decoration: line-through;
+}
+
+/* INSTRUCTIONS */
+.instructions {
+    margin-top: 2rem;
+}
+
+.instructions ul {
+    margin-top: 1.5rem;
+    margin-bottom: 3.7rem;
+}
+
+.instructions li {
+    margin-bottom: 3.7vh;
+    display: grid;
+    grid-template-columns: 9% 91%;
+}
+
+.num {
+    width: 36px;
+    height: 36px;
+    background-color: #F2994A;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.instructions li:nth-of-type(6) div {
+    line-height: 2rem;
+}
+
+/* CARD */
+.info-card {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-card ul {
+    width: 216px;
+    height: 367px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0 4vh;
+}
+
+.info-card span {
+    font-size: 2.125rem;
+    color: #4F4F4F;
+}
+
+.info-card li {
+    display: flex;
+    gap: .8rem;
+}
+
+.info-card .highlighted {
+    color: #F2994A;
+}
+
+/* MEDIA QUERIES */
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1439px) {
+    .content {
+        grid-template-columns: 60% 40%;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .instructions li {
+        column-gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .instructions li {
+        column-gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    .info-card ul {
+        width: 200px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .instructions li {
+        column-gap: 0px;
+    }
+    .info-card {
+        order: -1;
+        justify-content: flex-start;
+        margin-bottom: 3rem;
+    }
+    .info-card ul {
+        width: 95%;
+        height: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-shadow: none;
+        gap: 2rem;
+        padding: 0;
+    }
+    .info-card ul li:first-child {
+        width: 100%;
+    }
+    .banner-img {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    
+}
+
+@media only screen and (max-width: 864px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+    body {
+        padding-left: 8vw;
+        padding-right: 10vw;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .instructions li {
+        column-gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 587px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .instructions li {
+        column-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    body {
+        padding-left: 5vw;
+        padding-right: 6vw;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 500px) and (orientation: portrait),
+only screen and (max-height: 414px) and (orientation: landscape) {
+    body {
+        padding: 3vh 3vw;
+    }
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .sub-heading {
+        margin-top: 1rem;
+    }
+    .banner-img {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .info-card span {
+        font-size: 1.7rem;
+    }
+    h4 {
+        font-size: 0.6rem;
+        line-height: 0.85rem;
+    }
+    .info-card li p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .info-card ul {
+        gap: 1rem;
+    }
+    h2 {
+        margin-top: -1rem;
+    }
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    h3:nth-of-type(2) {
+        margin-top: 1rem;
+    }
+    .ingredients li {
+        column-gap: 13px;
+        grid-template-columns: 5% 92%;
+    }
+    .instructions li {
+        gap: 13px;
+        grid-template-columns: 9% 86%;
+    }
+    .instructions ul {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .instructions {
+        margin-top: 2.8rem;
+    }
+}
+
+@media only screen and (min-height: 380px) and (max-height: 414px) and (orientation: landscape) {
+    body {
+        padding: 6vh 3vw;
+    }
+    .ingredients li {
+        column-gap: 0px;
+        grid-template-columns: 5% 95%;
+    }
+    .instructions li {
+        gap: 0px;
+        grid-template-columns: 7% 93%;
+    }
+    .instructions {
+        margin-top: 3rem;
+    }
+    .info-card span {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: .625rem;
+        line-height: .85rem;
+    }
+    .info-card li p {
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+    }
+}
+
+@media only screen and (max-width: 375px) and (orientation: portrait),
+only screen and (max-height: 375px) and (orientation: landscape) {
+    body {
+        padding: 3vh 3vw;
+    }
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .sub-heading .text {
+        font-size: 0.75rem;
+    }
+    .sub-heading {
+        margin-top: 1rem;
+    }
+    .banner-img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .info-card span {
+        font-size: 1.063rem;
+    }
+    h4 {
+        font-size: 0.5rem;
+        line-height: 0.625rem;
+    }
+    .info-card li {
+        gap: .5rem;
+    }
+    .info-card li p {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+    }
+    .info-card ul {
+        gap: 1.5rem;
+    }
+    .recipe {
+        margin-top: -1.2rem;
+    }
+    h2 {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+        line-height: 1.313rem;
+        margin: 1rem 0;
+    }
+    h3:nth-of-type(2) {
+        margin: .7rem 0 1rem;
+    }
+    .ingredients li {
+        font-size: .875rem;
+        column-gap: 13px;
+        grid-template-columns: 5% 92%;
+    }
+    .instructions li {
+        gap: 13px;
+        grid-template-columns: 9% 86%;
+    }
+    .instructions ul {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .credits {
+        font-size: .75rem;
+        line-height: 1.125rem;
+    }
+}
+
+@media only screen and (max-height: 375px) and (orientation: landscape) {
+    body {
+        padding: 5vh 3vw;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .instructions li {
+        column-gap: 0px;
+    }
+    .ingredients li {
+        column-gap: 0px;
+    }
+    h4 {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+    }
+    .info-card span {
+        font-size: 1.25rem;
+    }
+    .info-card li p {
+        font-size: 0.75rem;
+        line-height: 0.825rem;
+    }
+}
+
+/* galaxy fold */
+@media only screen and (max-width: 280px) and (orientation: portrait) {
+    html {
+        font-size: 14px;
+    }
+    body {
+        padding-top: 4vh;
+    }
+    .ingredients li input {
+        width: 17px;
+        height: 17px;
+    }
+    .num {
+        width: 28px;
+        height: 28px;
+    }
+    .instructions li {
+        font-size: 0.9rem;
+    }
+    footer p {
+        font-size: .7rem;
+    }
+}
