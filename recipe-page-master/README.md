@@ -37,22 +37,28 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](recipe-page.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- **Where can I see your demo?**<br>
+  You can see the live version of the project here: https://devchallenges-responsivepath-project4.netlify.app/
+  
+- **What was your experience?**<br>
+  I had fun while making the project.
+  
+- **What have you learned/improved?**<br>
+  I have ensured that the design flows seamlessly from the desktop to the mobile version. I also added a strikethrough if the user had checked the input box.
+  
+- **Your wisdom? :)**<br>
+  Media Queries are there to help you not make your life tough!
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Features
 
