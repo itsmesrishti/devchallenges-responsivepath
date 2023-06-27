@@ -384,6 +384,7 @@ only screen and (max-height: 414px) and (orientation: landscape) {
     }
     .info-card ul {
         gap: 1rem;
+        width: 100%;
     }
     h2 {
         margin-top: -1rem;
