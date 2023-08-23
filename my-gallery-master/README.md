@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/itsmesrishti/devchallenges-responsivepath/tree/main/my-gallery-master">
       Solution
     </a>
     <span> | </span>
