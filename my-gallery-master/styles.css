@@ -10,7 +10,6 @@ html {
     font-family: 'Montserrat', sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    /* height: 100%; */
 }
 
 body {
@@ -18,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     overscroll-behavior: none;
-    /* height: 100%; */
 }
 
 /* HEADER */
@@ -67,7 +65,6 @@ body {
 }
 
 .header .bubble p.light {
-    /* color: red; */
     color: #BDBDBD;
 }
 
@@ -137,13 +134,10 @@ footer p a:visited {
 }
 
 .wrapper {
-    /* width: 80vw; */
-    /* height: 80vh; */
     width: 74vw;
     height: 28vh;
     background-color: white;
     position: sticky;
-    top: 35vh;
     left: 13vw;
     background-attachment: fixed;
     border-radius: 20px;
@@ -191,9 +185,7 @@ footer p a:visited {
         margin-top: 1.5rem;
     }
     .wrapper {
-        top: 37vh;
         height: 26vh;
-        background-color: pink;
     }
 }
 
@@ -219,8 +211,6 @@ footer p a:visited {
         font-size: 2rem;
     }
     .wrapper {
-        top: 38vh;
-        background-color: orange;
         height: 23vh;
     }
 }
@@ -244,7 +234,6 @@ footer p a:visited {
         margin-top: 1.40rem;
     }
     .wrapper {
-        top: 38vh;
         height: 22vh;
         padding: 2.8vh 0;
     }
@@ -260,8 +249,6 @@ footer p a:visited {
         gap: 1rem;
     }
     .wrapper {
-        top: 35vh;
-        top: none;
         height: 46vw;
         padding: 5vw 0;
     }
@@ -278,7 +265,6 @@ footer p a:visited {
 
 @media only screen and (min-width: 973px) {
     .img-grid {
-        /* background-color: pink; */
         grid-template-columns: repeat(2, 31%);
         grid-template-rows: repeat(3, 32%);
         column-gap: 2rem;
@@ -320,7 +306,6 @@ footer p a:visited {
     .wrapper {
         width: 51vw;
         height: 70vh;
-        top: 14vh;
         left: 25vw;
         padding: 8vh 0;
     }
