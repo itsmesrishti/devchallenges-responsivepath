@@ -48,18 +48,12 @@ imgCollection.forEach(item => {
 
 
 // SETTING HEIGHT FOR TOP POSITION OF CAROUSEL WRAPPER DIV
-function calcTopPosition(x) {
-    if (x.matches) {
-        window.addEventListener('resize', function() {
-            var viewportHeight = window.innerHeight;
-            var wrapperHeight = document.querySelector('.wrapper').clientHeight;
-            var topPos = (viewportHeight - wrapperHeight) / 2;
-            document.querySelector('.wrapper').style.top = topPos + "px";
-        });
-    }
+function calcTopPosition() {
+    var viewportHeight = window.innerHeight;
+    var wrapperHeight = document.querySelector('.wrapper').clientHeight;
+    var topPos = (viewportHeight - wrapperHeight) / 2;
+    document.querySelector('.wrapper').style.top = topPos + "px";
 }
-  
-var x = window.matchMedia("(min-width: 500px)");
-calcTopPosition(x);
-x.addEventListener('change', calcTopPosition);
+window.onload = calcTopPosition;
+window.addEventListener('resize', calcTopPosition);
 
