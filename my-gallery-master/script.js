@@ -1,7 +1,8 @@
-var heightCarousel = document.querySelector('body').scrollHeight;
-
-document.getElementsByClassName("carousel")[0].style.height = heightCarousel + "px";
-
+// TO SET BACKGROUND (i.e. ".carousel") HEIGHT
+function setBackgroundHeight() {
+    var heightCarousel = document.querySelector('body').scrollHeight;
+    document.getElementsByClassName("carousel")[0].style.height = heightCarousel + "px";
+}
 
 // OPEN CAROUSEL WITH CORRECT IMAGE
 var imgCollection = document.querySelectorAll(".grid-img");
@@ -43,6 +44,10 @@ imgCollection.forEach(item => {
             carouselImgID =  "carousel-img-" + idNum;
             document.getElementById(carouselImgID).style.display = "block";  
         });
+
+        // SETTING BACKGROUND
+        setBackgroundHeight();
+        window.addEventListener('resize', setBackgroundHeight);
     })
 })
 
