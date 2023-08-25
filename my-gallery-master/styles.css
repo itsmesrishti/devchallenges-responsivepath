@@ -130,7 +130,6 @@ footer p a:visited {
     height: 100%;
     object-fit: contain;
     display: none;
-    margin-bottom: 10vh;
 }
 
 .wrapper {
@@ -145,7 +144,12 @@ footer p a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4vh 0;
+    padding: 4.2vh 0;
+}
+
+.wrapper img:nth-of-type(2),
+.wrapper img:nth-of-type(3) {
+    margin-top: .5vh;
 }
 
 .carousel i {
@@ -171,6 +175,13 @@ footer p a:visited {
     font-size: 2.5rem;
 }
 
+#current-img-num {
+    color: #ccc;
+    position: absolute;
+    bottom: 1.2vh;
+    font-size: .7rem;
+}
+
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 360px) {
@@ -184,14 +195,9 @@ footer p a:visited {
     .header .profile-info {
         margin-top: 1.5rem;
     }
-    .wrapper {
-        height: 26vh;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .wrapper {
-        height: 24vh;
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 2vh;
     }
 }
 
@@ -210,8 +216,9 @@ footer p a:visited {
     .right-icon, .left-icon {
         font-size: 2rem;
     }
-    .wrapper {
-        height: 23vh;
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 2.5vh;
     }
 }
 
@@ -233,9 +240,36 @@ footer p a:visited {
     .header .profile-info {
         margin-top: 1.40rem;
     }
+    #current-img-num {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 1.3vh;
+    }
     .wrapper {
-        height: 22vh;
-        padding: 2.8vh 0;
+        height: 28vh;
+    }
+}
+
+
+@media only screen and (min-width: 460px) {
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 0vh;
+    }
+}
+
+@media only screen and (min-width: 471px) {
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 0vh;
+    }
+    .wrapper {
+        height: 29vh;
     }
 }
 
@@ -249,17 +283,56 @@ footer p a:visited {
         gap: 1rem;
     }
     .wrapper {
-        height: 46vw;
-        padding: 5vw 0;
+        height: 50vw;
+        padding: 6vw 0;
+    }
+}
+
+@media only screen and (min-width: 627px) {
+    #current-img-num {
+        bottom: 1.5vh;
+        font-size: .8rem;
     }
 }
 
 @media only screen and (min-width: 707px) {
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 2vh;
+    }
+    #current-img-num {
+        bottom: 1.8vh;
+    }
+}
+
+@media only screen and (min-width: 731px) {
+    #current-img-num {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper img:nth-of-type(2),
+    .wrapper img:nth-of-type(3) {
+        margin-top: 1.5vh;
+    }
+}
+
+@media only screen and (min-width: 864px) {
+    #current-img-num {
+        bottom: 2.2vh;
+    }
+}
+
+@media only screen and (min-width: 900px) {
     html {
         font-size: 19px;
     }
     .img-grid {
         column-gap: 1.5rem;
+    }
+    #current-img-num {
+        bottom: 2.5vh;
     }
 }
 
@@ -276,6 +349,9 @@ footer p a:visited {
     .img-grid img.two-sq-horizontal {
         width: 211%;
     }
+    #current-img-num {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width: 1047px) {
@@ -288,6 +364,18 @@ footer p a:visited {
     .header img {
         width: 7.3rem;
         height: 7.3rem;
+    }
+}
+
+@media only screen and (min-width: 1110px) {
+    #current-img-num {
+        bottom: 3vh;
+    }
+}
+
+@media only screen and (min-width: 1310px) {
+    #current-img-num {
+        bottom: 3.3vh;
     }
 }
 
@@ -307,7 +395,6 @@ footer p a:visited {
         width: 51vw;
         height: 70vh;
         left: 25vw;
-        padding: 8vh 0;
     }
     .close-icon {
         right: 20vw;
@@ -320,33 +407,38 @@ footer p a:visited {
         top: 42vh;
         right: 19.5vw;
     }
+    #current-img-num {
+        bottom: 3.5vh;
+    }
 }
 
 @media only screen and (max-height: 375px) and (orientation: landscape) {
     .wrapper {
-        height: 60vh;
-        top: 20vh;
+        height: 85vh;
     }
     .right-icon {
         top: 44vh;
-        right: 19vw;
     }
     .left-icon {
         top: 44vh;
+    }
+    #current-img-num {
+        bottom: 3.5vh;
     }
 }
 
 @media only screen and (max-height: 360px) and (orientation: landscape) {
     .wrapper {
-        width: 45vw;
-        left: 28vw;
+        width: 60vw;
+        left: 20vw;
     }
 }
 
 @media only screen and (max-height: 280px) and (orientation: landscape) {
     .wrapper {
-        width: 38vw;
+        width: 37vw;
         left: 32vw;
+        height: 70vh;
     }
     .right-icon {
         right: 23vw;
@@ -355,5 +447,11 @@ footer p a:visited {
     .left-icon {
         left: 25vw;
         font-size: 2.3rem;
+    }
+}
+
+@media only screen and (min-height: 1300px) {
+    #current-img-num {
+        bottom: 1rem;
     }
 }
