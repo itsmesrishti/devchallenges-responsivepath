@@ -409,6 +409,7 @@ footer p a:visited {
     }
     #current-img-num {
         bottom: 3.5vh;
+        color: red;
     }
 }
 
