@@ -397,19 +397,18 @@ footer p a:visited {
         left: 25vw;
     }
     .close-icon {
-        right: 17vw;
+        right: 15vw;
     }
     .left-icon {
         top: 42vh;
-        left: 17vw;
+        left: 15vw;
     }
     .right-icon {
         top: 42vh;
-        right: 17vw;
+        right: 15vw;
     }
     #current-img-num {
         bottom: 3.5vh;
-        color: red;
     }
     .wrapper img:nth-of-type(2),
     .wrapper img:nth-of-type(3) {
