@@ -9,12 +9,15 @@ var imgCollection = document.querySelectorAll(".grid-img");
 
 imgCollection.forEach(item => {
     item.addEventListener('click', function(event) {
+        // CALCULATING ID
         var imgID = event.target.id;
         var idNum = imgID[imgID.length - 1];
-
         var carouselImgID = "carousel-img-" + idNum;
+        
+        // OPEN CAROUSEL
         document.querySelector('.carousel').style.visibility = "visible";
         document.getElementById(carouselImgID).style.display = "block";
+        document.getElementById('current-img-num').innerHTML = idNum + " / 6";
 
         // CLOSE CAROUSEL
         document.querySelector('.close-icon').addEventListener('click', function() {
@@ -32,6 +35,7 @@ imgCollection.forEach(item => {
             idNum = Number(idNum) + 1;
             carouselImgID =  "carousel-img-" + idNum;
             document.getElementById(carouselImgID).style.display = "block";
+            document.getElementById('current-img-num').innerHTML = idNum + " / 6";
         });
 
         document.querySelector('.left-icon').addEventListener('click', function() {
@@ -43,11 +47,16 @@ imgCollection.forEach(item => {
             idNum = Number(idNum) - 1;
             carouselImgID =  "carousel-img-" + idNum;
             document.getElementById(carouselImgID).style.display = "block";  
+            document.getElementById('current-img-num').innerHTML = idNum + " / 6";
         });
 
         // SETTING BACKGROUND
         setBackgroundHeight();
         window.addEventListener('resize', setBackgroundHeight);
+
+        // CALC TOP POSITION
+        calcTopPosition();
+        window.addEventListener('resize', calcTopPosition);
     })
 })
 
@@ -59,6 +68,3 @@ function calcTopPosition() {
     var topPos = (viewportHeight - wrapperHeight) / 2;
     document.querySelector('.wrapper').style.top = topPos + "px";
 }
-window.onload = calcTopPosition;
-window.addEventListener('resize', calcTopPosition);
-
