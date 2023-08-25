@@ -40,10 +40,15 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- **Where can I see your demo?**<br>
+  You can see my demo here: https://devchallenges-responsivepath-project5.netlify.app/
+  
+- **What was your experience?**<br>
+  I enjoyed creating the gallery page and figuring out how to make images and the design fully responsive.
+  
+- **What have you learned/improved?**<br>
+  I added a new feature: a carousel. User can click on an image to view the expanded version of the image and navigate to other images too through a carousel.
+
 
 ### Built With
 
