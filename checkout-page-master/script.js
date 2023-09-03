@@ -3,7 +3,6 @@ var cartButtons = document.querySelectorAll(".cart-btns");
 
 for (var i = 0; i < cartButtons.length; i++) {
     var btn = cartButtons[i];
-    var plusBtns = new Array();
 
     btn.addEventListener('click', function() {
         
