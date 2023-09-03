@@ -22,7 +22,6 @@ body {
     min-width: 250px;
     height: 100%;
     width: 100%;
-    /* background-color: pink; */
 }
 
 h1 {
@@ -350,16 +349,6 @@ footer p a:visited {
     form .input-field {
         height: 3.15rem;
     }
-}
-@media only screen and (min-width: 928px) {
-    /* form input::placeholder,
-    form .input-field input,
-    form .input-field select {
-        font-size: .85rem;
-    }
-    form .input-field {
-        margin-top: .3rem;
-    } */
 }
 @media only screen and (min-width: 2560px) {
     html {
