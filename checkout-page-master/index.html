@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="main">
+        <div class="cart">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="/photo1.png" alt="backpack">
+                    <div class="item-info">
+                        <div>
+                            <p class="item-name">Vintage Backbag</p>
+                            <div class="price">
+                                <p class="discounted-price">$54.99</p>
+                                <p class="original-price">$94.99</p>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button class="cart-btns" id="first-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                            <p id="item-1" class="item">1</p>
+                            <button class="cart-btns plus-btn" id="first-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="/photo2.png" alt="backpack">
+                    <div class="item-info">
+                        <div>
+                            <p class="item-name">Levi Shoes</p>
+                            <div class="price">
+                                <p class="discounted-price">$74.99</p>
+                                <p class="original-price">$124.99</p>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button class="cart-btns" id="second-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                            <p>1</p>
+                            <button class="cart-btns plus-btn" id="second-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-breakdown">
+                <div class="row">
+                    <p>Shipping</p>
+                    <p>$19</p>
+                </div>
+                <div class="row">
+                    <p>Total</p>
+                    <p id="total-price">$148.98</p>
+                </div>
+            </div>
+        </div>
+        <form action="https://reqres.in/api/users/" method="post">
+            <fieldset>
+                <legend>Contact information</legend>
+                <div class="form-field">
+                    <label for="email">E-mail</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Enter your phone..." required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Shipping address</legend>
+                <div class="form-field">
+                    <label for="full-name">Full name</label>
+                    <div class="input-field" id="name-input-field">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" name="full-name" id="full-name" pattern="[a-zA-Z'\- ]{2,}" value="Rodney Cotton" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="address">Address</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" name="address" id="address" placeholder="Your address.." required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="city">City</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-city"></i>
+                        <input type="text" name="city" id="city" pattern="[a-zA-Z]{2,}" placeholder="Your city.." required>
+                    </div>
+                </div>
+                <div class="bi-form-field">
+                    <div class="form-field">
+                        <label for="country">Country</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <select name="country" id="country" required>
+                                <option value="" disabled selected>Your country..</option>
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="China">China</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="postal-code">Postal code</label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-landmark"></i>
+                            <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code.." required>
+                        </div>
+                    </div>
+                </div>
+                <div class="note-field">
+                    <input type="checkbox" id="save-info" name="save-info">
+                    <label for="save-info" id="small-label">Save this information for next time</label>
+                </div>
+            </fieldset>
+            <button type="submit" id="continue-btn">Continue</button>
+        </form>
+    </div>
+    <footer>
+        <p>created by <a href="https://devchallenges.io/portfolio/itsmesrishti" target="_blank">itsmesrishti</a> - devChallenges.io</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
