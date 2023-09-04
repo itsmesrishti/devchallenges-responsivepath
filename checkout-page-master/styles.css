@@ -87,6 +87,13 @@ h1 {
     padding: .2em;
     color: #828282;
 }
+.item-info .item-count input {
+    width: 1em;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
 .item-info .item-count button {
     border: none;
     cursor: pointer;
@@ -110,6 +117,16 @@ h1 {
     margin-top: 5rem;
     color: #333333;
     font-size: .9rem;
+}
+.cart .cost-breakdown .row input {
+    width: max-content;
+    text-align: right;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    color: #333333;
+    font-weight: 600;
 }
 
 
