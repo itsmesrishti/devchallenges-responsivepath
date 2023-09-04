@@ -207,6 +207,7 @@ form button {
     font-weight: 600;
     float: right;
     margin-top: 1.5rem;
+    cursor: pointer;
 }
 .bi-form-field {
     display: grid;
