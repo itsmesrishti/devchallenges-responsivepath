@@ -40,10 +40,16 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- **Where can I see your demo?**<br>
+  You can see my demo here: [live version](https://devchallenges-responsivepath-project6.netlify.app/)
+  
+- **What was your experience?**<br>
+  I enjoyed creating the checkout page and figuring out how to give the user a chance to increase or decrease the number of items in the cart. And how to change the total price each time a new item is added or removed. 
+  
+- **What have you learned/improved?**<br>
+  I don't know if the challenge creator wanted the user to input the number of items directly by letting them type in a number or by using the plus and minus button but I did the latter. If the former is what the challenge creator wanted then I added a new feature using which users can add or remove as many items as they want by using the plus/minus buttons.
+
+  I added this new feature where each time a user adds or removes an item from the cart the total price gets updated.
 
 ### Built With
 
@@ -57,13 +63,20 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to create a checkout page for an e-commerce site. User stories Should be fulfilled
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to create a checkout page for an e-commerce site. Following user stories should be fulfilled:
+- [x] User story: I can see a page following the given design.
+- [x] User story:  I can input email, phone, full name, address, city, country, and postal code.
+- [x] User story: I can input the number of items.
+- [x] User story: I can select at least 3 countries from the dropdown.
+- [x] User story: When I click the submit button or press enter, I can see a warning if validation fails.
+- [x] User story: When I click the submit button or press enter, I can see a successful alert if validation succeeds.
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
 - [Render](https://render.com/) for hosting
+- [Font Awesome](https://fontawesome.com/) for the icons
 
 ## Contact
 
