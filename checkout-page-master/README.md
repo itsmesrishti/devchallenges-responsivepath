@@ -41,7 +41,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - **Where can I see your demo?**<br>
-  You can see my demo here: [live version](https://devchallenges-responsivepath-project6.netlify.app/)
+  You can see my demo here: [live version](https://devchallenges-responsivepath-project6.onrender.com/)
   
 - **What was your experience?**<br>
   I enjoyed creating the checkout page and figuring out how to give the user a chance to increase or decrease the number of items in the cart. And how to change the total price each time a new item is added or removed. 
